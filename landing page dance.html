@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playground</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .bg-main{
+        font-family: "Helvetica Neue",Arial,sans-serif;
+    }
+    .navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #808080;
+}
+.navbar .navbar-nav .nav-link:active{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.navbar-logo-centered .navbar-nav .nav-link{
+    /* padding: .5em 1em; */
+}
+.nav-item{
+    padding-top: 20px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+.nav-button{
+    border: 3px solid white;
+    padding: 15px;
+    color: white;
+    background-color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+.navv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.nav-button:hover{
+    background-color: white;
+    color: red;
+}
+.logo-right{
+    padding-right:20px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    
+}
+.logo-right a{
+    color: white;
+    margin-left:25px;
+}
+.main-content{
+    height: auto;
+    padding: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playfround{
+    font-size: 50px !important;
+    font-weight: 600 ;
+
+    
+}
+@media only screen and (max-width: 800px) {
+    .playfround{
+        font-size: 20px !important;
+    }
+    .logo{
+        float: left;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    
+    .cart{
+       
+        margin-top: 5px;
+      position: static;
+    }
+   
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-toggler-icon{
+        margin-top: 15px !important;
+        border-radius: 2px;
+       
+        
+    }
+    .nav-button{
+        display: none;
+    }
+    .iconn{
+        display: none;
+    }
+    .logo-right{
+        padding-right: 0px;
+    }
+    .abc{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .imgess{
+        width: 100% !important;
+    }
+    .carttt{
+        margin-top: 22px !important;
+    }
+    
+}
+.navbar-toggler-icon{
+       
+        border-radius: 2px;
+        
+    }
+.gifcontent-1-btn{
+    border: 2px solid white;
+    padding: 15px;
+    color: white;
+    background-color: transparent;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.gifcontent-1-btn:hover{
+    background-color: white;
+    color: red;
+    transition: 0.2s;
+}
+.img-backgroung-2{
+    background-image: url('./dancelandingpage/image/\(2\).com-gif-maker-7.gif');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung{
+background-image: url('./dancelandingpage/image/umair.gif');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung-3{
+    background-image: url('./dancelandingpage/image/\(3\).com-video-to-gif-8.gif');
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung-4{
+    background-image: url('./dancelandingpage/image/\(4\).gif');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung-5{
+    background-image: url('./dancelandingpage/image/\(5\).com-video-to-gif-2+copy.gif');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung-6{
+    background-image: url('./dancelandingpage/image/\(6\).com-gif-maker.gif');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+.img-backgroung-7{
+    background-image: url('./dancelandingpage/image/\(4\).gif');
+    /* background-position: cover; */
+background-size: cover;
+color: white;
+}
+
+.gifcontent-1{
+    padding: 50px;
+}
+.LAST-BTN{
+    border: 2px solid white;
+    padding: 15px;
+    color: white;
+    background-color: transparent;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.LAST-BTN:hover{
+background-color: white;
+color: red;
+transition: 0.5s;
+}
+.last-links{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0 !important;
+    align-items: center;
+}
+</style>  
+</head>
+  <body>
+
+    <div class="bg-main" style="background-color: black">
+    <section>
+
+
+        <nav class="navbar navbar-expand-lg d-none d-lg-flex" style="background-color:black;">
+            <div class="abc container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white; color: #ffffff;"></span></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex flex-column align-items-start" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item" >
+                        <a class="nav-link active" href="#123">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PGTV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rentals</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="margin-top: -20px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                </div>
+             
+                <div class=" logo d-flex mt-4" style="justify-content: center;">
+                    <a class=" " href="#"><img src="./dancelandingpage/image/FAVICON.png" style="    max-width: 100%;
+                        max-height: 79px;"></a>
+                </div>
+
+
+                <div class="logo-right d-flex mt-2 mb-lg-0" style="float: right; color: white;">
+                          
+                    <div> <a class="iconn me-2" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+             
+                 
+                    <div><a class="iconn me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+
+                
+                 
+                    <div class="iconn"> <a class=" me-2" href="#"><i class="fa-regular fa-envelope"></i></a></div>
+                
+                
+                    <div class="d-flex" style="flex-direction:row; word-spacing: 0;"> <div><a class=" cart" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>0</a></div></div>
+                 
+                 
+                    <div> <a class="" href="#"><button class="nav-button" type="button"> PGTV</button></a></div>
+                 
+                 </div>
+              
+            </div>
+           
+            
+          </nav>
+          <nav class="navbar navbar-expand-lg d-lg-none d-flex" style="background-color:black;">
+            <div class="abc container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white; color: #ffffff;"></span></span>
+              </button>
+    
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item" >
+                        <a class="nav-link active" href="#123">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PGTV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rentals</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="margin-top: -20px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                </div>
+                <div class=" logo d-flex mt-4" style="justify-content: center;">
+                    <a class=" " href="#"><img src="./dancelandingpage/image/FAVICON.png" style="    max-width: 100%;
+                        max-height: 79px;"></a>
+                </div>
+
+
+                <div class="logo-right d-flex mt-2 mb-lg-0" style="float: right; color: white;">
+                          
+                    <div> <a class="iconn me-2" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+             
+                 
+                    <div><a class="iconn me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+
+                
+                 
+                    <div class="iconn"> <a class=" me-2" href="#"><i class="fa-regular fa-envelope"></i></a></div>
+                
+                
+                    <div class="carttt d-flex" style="flex-direction:row; word-spacing: 0;"> <div><a class=" cart" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>0</a></div></div>
+                 
+                 
+                    <div> <a class="" href="#"><button class="nav-button" type="button"> PGTV</button></a></div>
+                 
+                 </div>
+              
+            </div>
+           
+            
+          </nav>
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black">
+            <a class="navbar-brand d-lg-none" href="#"><img src="./dancelandingpage/image/FAVICON.png" style="height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
+                aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation" style="background-color:white !important;" >
+                <span class="navbar-toggler-icon" style="color:white;"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex id="myNavbarToggler7" style="justify-content:space-between">
+                
+                 
+                        
+                           <ul class="navbar-nav">
+                            <li class="nav-item" >
+                                <a class="nav-link active" href="#123">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PGTV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rentals</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        
+                         <div class="text-center"><a class="d-none d-lg-block " href="#"><img src="./dancelandingpage/image/FAVICON.png" style="    max-width: 100%;
+                            max-height: 79px;"></a></div>
+                        
+                            <div class="logo-right d-flex" style="float: right; color: white;">
+                          
+                                   <div> <a class=" me-2" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                            
+                                
+                                    <div><a class=" me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+
+                               
+                                
+                                   <div> <a class=" me-2" href="#"><i class="fa-regular fa-envelope"></i></a></div>
+                               
+                               
+                                   <div> <a class=" me-2" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>0</a></div>
+                                
+                                
+                               <div> <a class=" me-2" href="#"><button class="nav-button" type="button"> PGTV</button></a></div>
+                                
+                                </div>
+                        
+
+            </div>
+        </nav> -->
+
+       
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="main-content text-center" style="color: white;">
+                    <h1 class="playfround my-3">PLAYGROUND LA</h1>
+                    <h1 class="playfround my-3">PLAYGROUND LA</h1>
+                    <h1 class="playfround my-3">PLAYGROUND LA</h1>
+                    <h1 class="playfround my-3">PLAYGROUND LA</h1>
+                    <button type="button" class="nav-button  mt-3"> Take Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+     <div class="img-backgroung">
+        <div class="gifcontent-1">
+<h1 class="text-center my-5">IN STUDIO CLASSES</h1>
+ <div class="text-center"><button type="button" class="gifcontent-1-btn"> Take Class</button></div>
+        </div>
+     </div>
+    </section>
+    <section>
+        <div class="img-backgroung-2">
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">ONLINE CLASSES</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn">DANCE</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-3">
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">STORE</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn"> SHOP NOW</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-4">
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">RENTALS</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn"> LEARN MORE</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-5" id="123" >
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">PGTV</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn"> WATCH. DANCE. CHAT. ANYTIME. ANYWHERE</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-6">
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">KAPA X PLAYGROUND</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn"> DANCE</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-7">
+           <div class="gifcontent-1">
+   <h1 class="text-center my-5">PLAYGROUND LA APP</h1>
+    <div class="text-center"><button type="button" class="gifcontent-1-btn"> DOWNLOAD OUR APP TO SIGN UP & MANAGE YOUR STUDIO CLASSES</button></div>
+           </div>
+        </div>
+       </section>
+       <section>
+        <div class="text-center" style="color: WHITE; padding: 20px;"> 
+            <h1 class="my-5">THE TEAM</h1>
+            <div class="container">
+                <div class="row">
+            <div class="col-md-6"> 
+                <div class="imgess" style="height:400px; width: 90%; background-size: cover; background-image: url('./dancelandingpage/image/GIRL.png');">
+               
+               
+                </div>
+                <div class="mt-4">
+                <h1 class="text-center">ROBIN ANTIN</h1>
+                <p class="text-center"> Robin Antin is a dancer, choreographer, clothing designer, creator of The Pussycat Dolls and owner of PLAYGROUND LA. </p>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <div style="height:400px; background-size: cover; background-image: url('./dancelandingpage/image/BOY.jpg');">
+                   
+                </div>
+                <div class="mt-4">
+                <h1 class="text-center">KENNY WORMALD</h1>
+                <p class="text-center">Kenny Wormald is a dancer, choreographer, actor, creator of KAOS and owner of Playground LA.  </p>
+                    </div>
+            </div>
+            <div class="text-center mt-5 mb-3">
+                <button class="LAST-BTN">MEET OUR TEAM</button>
+            </div>
+            </div>
+            </div>
+        </div>
+       </section>
+       <section>
+        <div class="img-backgroung-7" style="height: 500px;">
+
+        </div>
+       
+           
+                <!-- <ul class="navbar-nav">
+                  
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                   
+                </ul> -->
+
+               <div class=" last-links d-flex ">
+                <div> <a class="me-4" href="#"><i class="fa-brands fa-instagram" style="color: white; font-size: larger;"></i></a></div>
+                <div>  <a class=" me-4" href="#"><i class="fa-brands fa-facebook-f" style="color: white;font-size: larger;"></i></a></div>
+                <div>  <a class=" me-4" href="#"><i class="fa-regular fa-envelope" style="color: white;font-size: larger;"></i></a></div>
+               </div>
+            
+        
+       </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>
